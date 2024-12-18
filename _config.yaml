@@ -1,15 +1,17 @@
 title: Adrian Willi
 email: you@example.com
 url: "https://adrian-willi.github.io"
-baseurl:
-description: Description for the site. This will appear in the footer as well as Google search results.
+baseurl: ""   # If hosting at root, leave empty
+description: "A professional CV and blog website by Adrian Willi."
 navbar:
-  - title: About
-    path: /about
-  - title: Directory
-    path: /example/
-  - title: Subpage
-    path: /example/subpage
+  - title: "Home"
+    path: "/"
+  - title: "About"
+    path: "/about"
+  - title: "Research CV"
+    path: "/"
+  - title: "Blog"
+    path: "/blog/"
 theme: minima
 markdown: kramdown
 defaults:
@@ -17,3 +19,9 @@ defaults:
       path: ""
     values:
       layout: page
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+
+# For blog excerpts
+excerpt_separator: <!--more-->
