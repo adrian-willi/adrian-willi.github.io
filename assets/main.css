@@ -1,27 +1,58 @@
+/* Basic reset/typography */
 body {
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
     font-family: 'Inter', sans-serif;
     color: #333;
-    background: #f9f9f9;
 }
 
-.site-header, .site-footer {
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+/* Wrapper & main content area */
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    border-radius: 4px;
+}
+
+/* Header */
+.site-header {
     background: #fff;
     border-bottom: 1px solid #eee;
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 
 .site-title {
-    font-weight: 600;
     font-size: 1.5rem;
-    color: #333;
     text-decoration: none;
+    color: #333;
+    margin-right: 2rem;
+}
+
+/* Navigation */
+.site-nav {
+    display: inline-block;
+    margin-left: 2rem;
 }
 
 .site-nav .page-link {
-    margin: 0 0.5rem;
+    margin: 0 1rem;
     text-transform: uppercase;
     font-size: 0.9rem;
-    color: #555;
+    color: #333;
     text-decoration: none;
 }
 
@@ -29,37 +60,57 @@ body {
     color: #000;
 }
 
-/* CV-specific styling */
-.cv-section {
+/* Footer */
+.site-footer {
+    background: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-top: 1px solid #eee;
+}
+
+/* Post content styling */
+.post-content {
     margin-bottom: 2rem;
 }
-
-.cv-section h2 {
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 0.5rem;
+.post-content .post-date {
+    color: #999;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
 }
 
-.cv-section ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.cv-section li {
-    margin-bottom: 0.5rem;
-}
-
-/* Blog index styling */
+/* Blog excerpt styling */
 .post-excerpt {
     margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
 }
 .post-excerpt h2 {
     margin-bottom: 0.5rem;
 }
-.post-excerpt p {
-    line-height: 1.6;
+.post-excerpt .read-more {
+    color: #007ACC;
+    text-decoration: none;
 }
-.post-excerpt a.read-more {
-    color: #0066cc;
+.post-excerpt .read-more:hover {
     text-decoration: underline;
 }
 
+/* CV layout specifics */
+.cv-content {
+    margin-top: 1rem;
+}
+.cv-section {
+    margin-bottom: 2rem;
+}
+.cv-section h2 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+.cv-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.cv-section li {
+    margin-bottom: 0.5rem;
+}

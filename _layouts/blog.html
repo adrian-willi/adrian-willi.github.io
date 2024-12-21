@@ -2,16 +2,14 @@
 layout: default
 ---
 
-<div class="wrapper">
-    <h1>Blog</h1>
-    <p>Welcome to my blog. Here are the latest entries:</p>
+<h1>{{ page.title }}</h1>
+<p>{{ content }}</p>
 
-    {% for post in site.posts %}
-    <div class="post-excerpt">
-        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-        <small>{{ post.date | date_to_long_string }}</small>
-        <p>{{ post.excerpt }}</p>
-        <p><a class="read-more" href="{{ post.url | relative_url }}">Read more</a></p>
-    </div>
-    {% endfor %}
+{% for post in site.posts %}
+<div class="post-excerpt">
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    <small>{{ post.date | date_to_long_string }}</small>
+    <p>{{ post.excerpt }}</p>
+    <p><a class="read-more" href="{{ post.url | relative_url }}">Read more</a></p>
 </div>
+{% endfor %}

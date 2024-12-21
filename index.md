@@ -1,11 +1,16 @@
 ---
-layout: default
+layout: cv
+title: "Adrian Willi"
 ---
 
-<div class="wrapper">
-  <h1>{{ page.title }}</h1>
-  <p><small>Posted on {{ page.date | date_to_long_string }}</small></p>
-  <div class="post-content">
-    {{ content }}
-  </div>
-</div>
+<!--
+  If you prefer dynamic content, you could remove the static HTML from
+  _layouts/cv.html and place sections here in Markdown. For example:
+  
+  ## Bio
+  Lorem ipsum...
+  
+  etc.
+  
+  For now, the _layouts/cv.html shows the main CV sections.
+-->

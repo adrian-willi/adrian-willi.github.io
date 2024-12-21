@@ -2,41 +2,50 @@
 layout: default
 ---
 
-<div class="wrapper">
+<article class="cv-content">
     <h1>{{ page.title }}</h1>
 
-    <div class="cv-section">
-        <h2>Bio</h2>
-        <p>Short biography statement goes here, introducing yourself as a researcher, your position, and current affiliation.</p>
-    </div>
+    <!-- Example CV sections, replace with your own data -->
 
-    <div class="cv-section">
+    <section class="cv-section">
+        <h2>Bio</h2>
+        <p>
+            Short biography statement goes here, introducing yourself as a researcher,
+            your position, and current affiliation.
+        </p>
+    </section>
+
+    <section class="cv-section">
         <h2>Education</h2>
         <ul>
             <li>Ph.D. in Computer Science, XYZ University (2020)</li>
             <li>M.Sc. in Computer Science, ABC University (2015)</li>
             <li>B.Sc. in Mathematics, DEF College (2013)</li>
         </ul>
-    </div>
+    </section>
 
-    <div class="cv-section">
+    <section class="cv-section">
         <h2>Experience</h2>
         <ul>
-            <li>Postdoctoral Researcher at GHI Institute (2020-Present)</li>
-            <li>Research Assistant at XYZ University (2017-2020)</li>
+            <li>Postdoctoral Researcher at GHI Institute (2020 – Present)</li>
+            <li>Research Assistant at XYZ University (2017 – 2020)</li>
         </ul>
-    </div>
+    </section>
 
-    <div class="cv-section">
+    <section class="cv-section">
         <h2>Publications</h2>
         <ul>
             <li>Willi, A. et al. (2021). "Title of a Great Paper", Journal of Something.</li>
             <li>Willi, A. & Coauthor (2019). "Another Research Work", Conference Proceedings.</li>
         </ul>
-    </div>
+    </section>
 
-    <div class="cv-section">
+    <section class="cv-section">
         <h2>Contact</h2>
-        <p>Email: you@example.com<br>Website: <a href="{{ site.url }}">{{ site.url }}</a></p>
-    </div>
-</div>
+        <ul>
+            <li>Adrian Willi</li>
+            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        </ul>
+        <p>A professional CV and blog website by Adrian Willi.</p>
+    </section>
+</article>
